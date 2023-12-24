@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Welcom to Bethany's Pie Shop!</title>
+    <meta name='author' content="Bethany's Pie Shop">
+    <meta name='description' content="Store front for Bethany's Pie Shop">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- allows to show for multiple types of displays (mobile)-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel='icon' type='image/png' href='favicon.png'>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="main-header">
+            <nav>   
+                <ul>
+                    <li> <img src='images/logos/bethany-horizontal-logo.png' class='menu-logo'/></li>
+                    <li> <a href='index.html'>Home</a></li>
+                    <li> <a href='pieoverview.html'>Pies</a></li> 
+                </ul>           
+            </nav>
+        </header>
+    <div id="main-content">
+        <aside id="left-menu">
+            <a href='index.html'>
+                <img src='images/logos/bethany-badge-logo.png' width='150px' />
+            </a>
+            <header>
+                <p class="aside-header">Browse our pies</p>
+            </header>
+            <ul class='small-menu'>
+                <li> <a href='pieoverview.html'>All pies</a></li>
+                <li> <a href='cheesecakes.html'>Cheese Cakes</a></li>
+                <li> <a href='fruitpies.html'>Fruit pies</a></li>
+                <li> <a href='seasonalpies.html'>Seasonal pies</a></li>
+                <li> <a href='#promos'>Promotions</a></li>
+            </ul>
+        </aside>
+        <main id="main">
+         <h1>Contact us!</h1>
+            <form method='post' action='contact.html' id='contactForm'>
+                <fieldset>
+                    <legend>Your information</legend>
+                <label for='firstName'>First Name</label>
+                <input type='text' id='firstName' name='firstName' placeholder='Enter your first name'>
+
+                <label for='lastName'>Last Name</label>
+                <input type='text' id='lastName' name='lastName' placeholder='Enter your last name'>
+
+
+                <label for='country'>Country</label>
+                <select id='country' name='country'>
+                    <option value="usa">USA</option>
+                    <option value="belgium">Belgium</option>
+                    <option value="netherlands">Netherlands</option>
+                </select>
+
+                <label for='birthday'>Birthday</label>
+                <input type='date' id='birthday' name='birthday'>
+
+                <label for='email'>Email</label>
+                <input type='email' id='email' name='email'>
+                </fieldset>
+
+                <fieldset>
+                    <legend>The reason you are contacting</legend>
+                <label>I have a</label> <br>
+                <input type='radio' id='question' name='contactReason' value='question' checked>                
+                <label for="question">Question</label><br>
+                <input type="radio" id="remark" name="contactReason" value="Remark">
+                <label for="remark">Remark</label><br>
+                <input type="radio" id="complaint" name="contactReason" value="Complaint">
+                <label for="complaint">Complaint</label><br>
+                <textarea id="question" name="question" placeholder="Write your text here" style="height:150px"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <small>2023 Bethany's Pie Shop - All rights reserved</small>
+        <p>Our address is
+        <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+        </p>
+    </footer>
+</div>
+
+<script>
+    function getData(form) {
+        var formData = new FormData(form);
+        var data = '';
+
+        for (var pair of formData.entries()) {
+            data += pair[0] + ": " + pair[1] + "\n";
+        }
+
+        alert(data);
+
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        getData(e.target);
+    });
+
+</script>
+
+
+
+</body>
+
+</html>

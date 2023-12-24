@@ -39,6 +39,33 @@ h2,h3,h4 {
     font-family: WorkSansRegular;
 }
 
+.small-menu {
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+.small-menu>li>a {
+    font-family: WorkSansRegular;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: #c87d52;
+}
+
+.aside-header {
+    text-align: center;
+    font-family: WorkSansBold;
+    text-transform: uppercase;
+}
+
+#left-menu>a>img> {
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+
+
 h2 {
     font-weight: bolder;
 }
@@ -104,6 +131,84 @@ table, td, th {
     font-size: 1.1em;
     letter-spacing: 0.2rem;
 }
+
+
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: WorkSansRegular;
+}
+
+form{
+    padding: 25px
+}
+input[type=text],
+input[type=date],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding:12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    font-family: WorkSansRegular;
+}
+
+
+input[type=submit] {
+    background-color: #c87d52;
+    color: black;
+    font-family: WorkSansRegular;
+    text-transform: uppercase;
+    font-size:  large;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+label {
+    font-family: WorkSansRegular;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+
+fieldset {
+    padding: 16px;
+    border-radius: 10px;
+    border-color: #c87d52;
+    margin-bottom: 30px;
+}
+
+legend {
+    margin-bottom: 0px;
+    margin-left: 16px;
+    font-family: WorkSansRegular;
+    text-transform: uppercase;
+}
+
+
 
 
 /*
